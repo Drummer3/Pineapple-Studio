@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "931457600205",
+    "firebase_url": "https://pineapple-studio-geo.firebaseio.com",
+    "project_id": "pineapple-studio-geo",
+    "storage_bucket": "pineapple-studio-geo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931457600205:android:d259fd788cc2986ebd3784",
+        "android_client_info": {
+          "package_name": "com.drummer3.studio_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931457600205-8s6ucplf0i5752h66hkaj8r4mvflr33i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdvjMulTohAKOI0hWNpbBNwRl9DDOY_gE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931457600205-8s6ucplf0i5752h66hkaj8r4mvflr33i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

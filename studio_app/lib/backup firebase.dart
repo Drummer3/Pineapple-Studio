@@ -1,36 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 void main() {
-  runApp(App());
-}
-
-class App extends StatelessWidget {
-  // Create the initialization Future outside of `build`:
-  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
-
-  @override
-  Widget build(BuildContext context) {
-    return FutureBuilder(
-      // Initialize FlutterFire:
-      future: _initialization,
-      builder: (context, snapshot) {
-        // Check for errors
-        if (snapshot.hasError) {
-          return SomethingWentWrong();
-        }
-
-        // Once complete, show your application
-        if (snapshot.connectionState == ConnectionState.done) {
-          return MyApp();
-        }
-
-        // Otherwise, show something whilst waiting for initialization to complete
-        return Loading();
-      },
-    );
-  }
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -226,31 +198,5 @@ _launchARCHIVE() async {
     await launch(url);
   } else {
     throw 'Could not launch $url';
-  }
-}
-
-class Loading extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Loading...'),
-        ),
-      ),
-    );
-  }
-}
-
-class SomethingWentWrong extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Error :( '),
-        ),
-      ),
-    );
   }
 }
