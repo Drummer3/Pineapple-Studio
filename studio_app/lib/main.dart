@@ -42,8 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           actions: [
             IconButton(
-              icon: const Icon(Icons.info),
-              tooltip: 'Info',
+              icon: const Icon(Icons.contact_page),
+              tooltip: 'კონტაქტი',
               onPressed: () {
                 infoPage(context);
               },
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
-                  "Join our YouTube stream ",
+                  "ლაივ სტრიმი",
                   style: TextStyle(fontSize: 25.0),
                 ),
               ),
@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   borderRadius: BorderRadius.circular(50.0),
                 ),
                 child: Text(
-                  "Live Stream Archive", //https://www.youtube.com/playlist?list=PLajrKdO6drP0mfdu6xR1EK1MhlT98w5H3
+                  "სტრიმის არქივი", //https://www.youtube.com/playlist?list=PLajrKdO6drP0mfdu6xR1EK1MhlT98w5H3
                   style: TextStyle(fontSize: 25.0),
                 ),
               ),
@@ -105,11 +105,10 @@ void infoPage(BuildContext context) {
         backgroundColor: Colors.white24,
         appBar: AppBar(
           backgroundColor: Colors.black12,
-          title: const Text('Info Page'),
+          title: const Text('კონტაქტი'),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.9,
@@ -121,9 +120,9 @@ void infoPage(BuildContext context) {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50.0),
                   ),
-                  onPressed: () => launch("tel://+995591080888"),
+                  onPressed: () => launch("tel:+995591080888"),
                   child: Text(
-                    'Call Us',
+                    'დაგვირეკეთ',
                     style: TextStyle(
                       fontSize: 24,
                       color: Colors.white,
@@ -144,7 +143,7 @@ void infoPage(BuildContext context) {
                   ),
                   onPressed: () => launch("mailto:drummerthree@gmail.com"),
                   child: Text(
-                    'Mail Us',
+                    'ელ-ფოსტა',
                     style: TextStyle(
                       fontSize: 24,
                       color: Colors.white,
@@ -166,7 +165,7 @@ void infoPage(BuildContext context) {
                   onPressed: () =>
                       launch("https://www.facebook.com/pineapplestudiogeo"),
                   child: Text(
-                    'Our Facebook',
+                    'ფეისბუკი',
                     style: TextStyle(
                       fontSize: 24,
                       color: Colors.white,
@@ -178,6 +177,7 @@ void infoPage(BuildContext context) {
           ),
         ),
       );
+      // onPressed: () => launch("tel://+995591080888"),
     },
   ));
 }

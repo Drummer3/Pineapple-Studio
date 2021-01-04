@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "844371864972",
+    "firebase_url": "https://pineapple-studio-georgia.firebaseio.com",
+    "project_id": "pineapple-studio-georgia",
+    "storage_bucket": "pineapple-studio-georgia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844371864972:android:7126e0c39e422325c27aa9",
+        "android_client_info": {
+          "package_name": "com.drummer3.studio_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844371864972-94hkrf2h91439fl9t38qpik8gclfpg80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOeqiMteSvnMaJE27tTr25R_riztmR4yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844371864972-94hkrf2h91439fl9t38qpik8gclfpg80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
